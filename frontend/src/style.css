@@ -1,0 +1,565 @@
+/* Общие настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Поиск */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff9800; /* Оранжевая граница */
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #e65100; /* Темно-оранжевая граница при фокусе */
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.5); /* Оранжевое свечение */
+}
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff9800; /* Основной оранжевый цвет */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #e65100; /* Темно-оранжевый цвет при наведении */
+    transform: scale(1.05); /* Небольшой эффект увеличения */
+}
+/* Header */
+.header {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff9900;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-login {
+    background-color: #ff9900;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+.btn-register {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #333;
+}
+
+.btn-register:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #ffebd1, #ffffff);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Products Section */
+.products-preview,
+.products {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.product-cards,
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0;
+}
+.sirok{
+    padding-top: 60px;
+    margin-bottom: 40px;
+    width: 350px;
+}
+.smetana{
+    width: 350px;
+}
+.tvorog{
+    height: 350px;
+}
+.ZOV{
+    width: 350px;
+}
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.section-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section-btn:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+.masla {
+    width: 300px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Contacts Section */
+.contact {
+    background-color: #ffffff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact-info li {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .auth-buttons {
+        margin-top: 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+/* Стили для формы вопросов */
+.question-form-container {
+    background-color: #ffffff;
+    padding: 2rem 4rem; /* Увеличили внутренние отступы */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* Форма занимает 80% ширины родительского контейнера */
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.question-form-container h1 {
+    font-size: 2rem; /* Сlightly уменьшили заголовок */
+    color: #ff9900;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Сlightly уменьшили отступ между полями */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem; /* Уменьшили отступ под текстом метки */
+    font-size: 1rem; /* Сlightly уменьшили размер шрифта */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem; /* Уменьшили внутренние отступы полей */
+    border: 2px solid #ff9900;
+    border-radius: 8px; /* Закруглили углы */
+    font-size: 1rem; /* Сlightly уменьшили размер шрифта */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #e68a00;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.form-group .checkbox-label {
+    font-size: 1rem; /* Сlightly уменьшили размер шрифта для чекбокса */
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+.form-group .checkbox-label input[type="checkbox"] {
+    margin-right: 0.5rem; /* Уменьшили отступ между чекбоксом и текстом */
+    accent-color: #ff9900;
+}
+
+.submit-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 1rem 2rem; /* Уменьшили размер кнопки */
+    border-radius: 8px; /* Закруглили углы кнопки */
+    font-size: 1rem; /* Сlightly уменьшили размер шрифта */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Кнопка занимает всю ширину контейнера */
+}
+
+.submit-button:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+/* Общие стили для кнопок */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Стили для модального окна */
+.auth-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%; /* Для мобильных устройств */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для затемнённого фона */
+.auth-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000; /* Убедитесь, что модальное окно выше других элементов */
+}
+
+/* Оранжевая тема */
+.auth-modal h2 {
+    color: #ff6f00; /* Оранжевый заголовок */
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.auth-modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.auth-modal input,
+.auth-modal button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-modal input:focus {
+    border-color: #ff9800; /* Оранжевая рамка при фокусе */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.5);
+}
+
+.auth-modal button {
+    background-color: #ff6f00; /* Оранжевый фон кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-modal button:hover {
+    background-color: #e65c00; /* Темно-оранжевый при наведении */
+}
+
+.auth-modal button.secondary {
+    background-color: #f5f5f5; /* Вторичная кнопка */
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.auth-modal button.secondary:hover {
+    background-color: #e0e0e0; /* При наведении на вторичную кнопку */
+}
+/* Стили для кнопки "Выйти" */
+.btn-logout {
+    background-color: #ff6f00; /* Оранжевый фон */
+    color: white; /* Белый текст */
+    border: none; /* Без границ */
+    border-radius: 5px; /* Скругление углов */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель мыши */
+    transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.btn-logout:hover {
+    background-color: #e65c00; /* Темно-оранжевый при наведении */
+}
+/* Стили для страницы "Личный кабинет" */
+.profile-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Круглый аватар */
+    object-fit: cover; /* Корректное масштабирование изображения */
+    margin-bottom: 20px;
+    border: 2px solid #ff6f00; /* Оранжевая рамка */
+}
+
+.profile-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.profile-info strong {
+    color: #ff6f00; /* Оранжевый акцент */
+}
