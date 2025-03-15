@@ -29,5 +29,5 @@ app.use('/api', searchRoutes); // Маршруты для поиска
 
 // Запуск сервера
 app.listen(PORT, () => {
-    console.log(`awaf запущен на http://localhost:${PORT}`);
+    console.log(`Сервер запущен на http://localhost:${PORT}`);
 });
