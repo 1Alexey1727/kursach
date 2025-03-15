@@ -7,7 +7,6 @@ import productsRoutes from './routes/productsRoutes.mjs'; // Импортиру�
 import searchRoutes from './routes/searchRoutes.mjs'; // Импортируем маршруты для поиска
 import path from 'path';
 import { fileURLToPath } from 'url';
-import multer from 'multer';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
